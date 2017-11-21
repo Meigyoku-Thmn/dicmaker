@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA759396-0EA5-4651-9476-4BCA72F02292}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Dictionary_Maker.My.MyApplication</StartupObject>
+    <RootNamespace>Dictionary_Maker</RootNamespace>
+    <AssemblyName>Dictionary Maker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Tai lieu TUMMO\Dictionary Maker\2_0\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Dictionary Maker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Dictionary Maker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Dictionary Maker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Dictionary Maker.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Dictionary Maker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Dictionary Maker.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fire.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A21FEA13276C34E2D65119489C982F937DBEF459</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Dictionary Maker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutocompleteMenu, Version=1.3.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AutocompleteMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="DocX, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\Tummo Spell 2016\bin\Release\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="FileHelpers">
+      <HintPath>..\..\..\VB.NET\Xu ly text\App\Xu ly text\Xu ly text\bin\Debug\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SQLite.Designer, Version=1.0.99.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.11.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=2.11.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildCode.vb" />
+    <Compile Include="ctrDictionary.Designer.vb">
+      <DependentUpon>ctrDictionary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrDictionary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewAttributes.Designer.vb">
+      <DependentUpon>frmAddNewAttributes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewAttributes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDictMaker.Designer.vb">
+      <DependentUpon>frmDictMaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDictMaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExport.Designer.vb">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndex.Designer.vb">
+      <DependentUpon>frmIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultDictionary.Designer.vb">
+      <DependentUpon>frmResultDictionary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultDictionary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWordList.Designer.vb">
+      <DependentUpon>frmWordList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWordList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mUniform.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmAttributes.Designer.vb">
+      <DependentUpon>frmAttributes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmAttributes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmCSS.Designer.vb">
+      <DependentUpon>frmCSS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmCSS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmDictionary.designer.vb">
+      <DependentUpon>frmDictionary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmDictionary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmEntry.Designer.vb">
+      <DependentUpon>frmEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmEntry2.Designer.vb">
+      <DependentUpon>frmEntry2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmEntry2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmFileViewer.Designer.vb">
+      <DependentUpon>frmFileViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmFileViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmImageViewer.Designer.vb">
+      <DependentUpon>frmImageViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmImageViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmImport.Designer.vb">
+      <DependentUpon>frmImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmImportXML.Designer.vb">
+      <DependentUpon>frmImportXML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmImportXML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmInputData.Designer.vb">
+      <DependentUpon>frmInputData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmInputData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmInternetExplorer.Designer.vb">
+      <DependentUpon>frmInternetExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmInternetExplorer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmMDI.Designer.vb">
+      <DependentUpon>frmMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmNewProject.Designer.vb">
+      <DependentUpon>frmNewProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmNewProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmSymbol.Designer.vb">
+      <DependentUpon>frmSymbol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmSymbol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmTable.Designer.vb">
+      <DependentUpon>frmTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmTextView.Designer.vb">
+      <DependentUpon>frmTextView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmTextView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmTummoDictionary2017.Designer.vb">
+      <DependentUpon>frmTummoDictionary2017.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmTummoDictionary2017.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\frmWebView.Designer.vb">
+      <DependentUpon>frmWebView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\frmWebView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\ProjectCenter.Designer.vb">
+      <DependentUpon>ProjectCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\ProjectCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\ProjectManager.vb" />
+    <Compile Include="My Project\ReadCSV.vb" />
+    <Compile Include="My Project\RichTextBoxHS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My Project\xmlReader.vb" />
+    <Compile Include="My Project\_pleaseWait.Designer.vb">
+      <DependentUpon>_pleaseWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\_pleaseWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RTFConvert.vb" />
+    <Compile Include="TummoPath.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctrDictionary.resx">
+      <DependentUpon>ctrDictionary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewAttributes.resx">
+      <DependentUpon>frmAddNewAttributes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDictMaker.resx">
+      <DependentUpon>frmDictMaker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExport.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndex.resx">
+      <DependentUpon>frmIndex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultDictionary.resx">
+      <DependentUpon>frmResultDictionary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWordList.resx">
+      <DependentUpon>frmWordList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmAttributes.resx">
+      <DependentUpon>frmAttributes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmCSS.resx">
+      <DependentUpon>frmCSS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmDictionary.resx">
+      <DependentUpon>frmDictionary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmEntry.resx">
+      <DependentUpon>frmEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmEntry2.resx">
+      <DependentUpon>frmEntry2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmFileViewer.resx">
+      <DependentUpon>frmFileViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmImageViewer.resx">
+      <DependentUpon>frmImageViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmImport.resx">
+      <DependentUpon>frmImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmImportXML.resx">
+      <DependentUpon>frmImportXML.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmInputData.resx">
+      <DependentUpon>frmInputData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmInternetExplorer.resx">
+      <DependentUpon>frmInternetExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmMDI.resx">
+      <DependentUpon>frmMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmNewProject.resx">
+      <DependentUpon>frmNewProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmSymbol.resx">
+      <DependentUpon>frmSymbol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmTable.resx">
+      <DependentUpon>frmTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmTextView.resx">
+      <DependentUpon>frmTextView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmTummoDictionary2017.resx">
+      <DependentUpon>frmTummoDictionary2017.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\frmWebView.resx">
+      <DependentUpon>frmWebView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\ProjectCenter.resx">
+      <DependentUpon>ProjectCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\RichTextBoxHS.resx">
+      <DependentUpon>RichTextBoxHS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\_pleaseWait.resx">
+      <DependentUpon>_pleaseWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dictionary Maker_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_color1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackColor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateLink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForeColor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTML.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Indent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertHorizontalRule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertOrderedList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertUnorderedList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JustifyCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JustifyFull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JustifyLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JustifyRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Outdent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveFormat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowHTML.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrikeThrough.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subscript .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Superscript .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wordclean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wordcount.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_action_success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books_infront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_extension_doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_china.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_england.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_flyaway_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_india.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_vietnam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_add_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_arrow_back_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_arrow_downward_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_arrow_forward_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_arrow_upward_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_backspace_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_border_all_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_border_bottom_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_border_color_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_chevron_left_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_chevron_right_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_code_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_content_cut_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_content_paste_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_create_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete_sweep_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_done_black_16dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_find_in_page_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_flag_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_folder_open_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_font_download_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_align_center_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_align_justify_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_align_left_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_align_right_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_bold_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_color_fill_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_color_text_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_indent_decrease_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_italic_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_line_spacing_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_list_bulleted_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_list_numbered_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_paint_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_quote_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_size_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_format_underlined_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_link_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_list_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_pageview_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_redo_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_reorder_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_save_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_search_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_settings_applications_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_settings_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_space_bar_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_text_format_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_undo_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_view_headline_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_zoom_in_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_zoom_out_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\research.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spellcheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spellcheck_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTF.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\template.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fire.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
