@@ -1,4 +1,6 @@
-# TUMMO DICTIONARY MAKER
+# Features
+
+TUMMO DICTIONARY MAKER
 _Version 1.0.3_
 
 Tummo Dictionary Maker (TDM) is a dictionary writing system (DWS), or dictionary production system (DPS). It 's using writing and producing a dictionary, glossary, vocabulary, thesaurus etc.
