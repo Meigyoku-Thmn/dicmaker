@@ -20,3 +20,11 @@ One of the most powerful tools in TDM is building XML Dictionary eXchange Format
 ![](https://preview.ibb.co/faysdR/hinh3.png)
 
 ![](https://preview.ibb.co/empnCm/hinh4.png)
+
+# Troubleshooting
+
+If you have any problems running Tummo Dictionary Maker, please see most common issues.
+
+# License
+
+Calypso is licensed under GNU General Public License v2 (or later).
