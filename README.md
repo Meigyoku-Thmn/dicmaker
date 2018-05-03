@@ -12,7 +12,7 @@ TDM support Multi-Dictionary Formatter (MDF). Help to easy make formatting and p
 
 One of the most powerful tools in TDM is <a href="https://www.tummosoftware.com/2017/02/tummo-dictionary-maker-english.html" targer="_blank"><span>building XML Dictionary eXchange Format</span></a>. With universal XML-based format, convertible from and to other popular formats like Mova, PtkDic, StarDict.
 
-<a href="https://www.tummosoftware.com/" targer="_blank" <span>Home Pages</span></a>
+<a href="https://www.tummosoftware.com/2017/02/tummo-dictionary-maker-english.html" targer="_blank"><span>Home Pages</span></a>
 
 # - VIDEO DEMO
 [https://www.youtube.com/watch?v=nWw2CGA3hcg](https://www.youtube.com/watch?v=nWw2CGA3hcg)
