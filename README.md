@@ -4,7 +4,7 @@ TUMMO DICTIONARY MAKER
 
 _Version 1.0.3_
 
-<a href="https://www.tummosoftware.com/2017/02/tummo-dictionary-maker-english.html" targer="_blank"><span>Tummo Dictionary Maker</span></a> (TDM) is a dictionary writing system (DWS), or <a href="https://www.tummosoftware.com" targer="_blank"><span>dictionary production system</span></a> (DPS). It 's using writing and producing a dictionary, glossary, vocabulary, thesaurus etc.
+<a href="https://www.tummosoftware.com/2017/02/tummo-dictionary-maker-english.html" targer="_blank"><span>Tummo Dictionary Maker</span></a> (TDM) is a dictionary writing system (DWS), or <a href="https://www.tummosoftware.com" targer="_blank"><span>dictionary production system</span></a> (DPS). It's using writing and producing a dictionary, glossary, vocabulary, thesaurus etc.
 
 TDM include an editor, a database, and various management tools.
 
